@@ -1,6 +1,6 @@
 package inheritance.parent;
-
-public class Fish {
+import inheritance.Animal;
+public class Fish extends Animal {
    
     private String live_in_water;
     private String has_gills;
@@ -10,10 +10,14 @@ public class Fish {
         this.has_gills = "Yes";
     }
 
-    public Fish(String live_in_water, String has_gills) {
+    public Fish(double dHeight, Double Weight, String animalType, String bloodType, String live_in_water,
+            String has_gills) {
+        super(dHeight, Weight, animalType, bloodType);
         this.live_in_water = live_in_water;
         this.has_gills = has_gills;
     }
+
+
 
     public String getLive_in_water() {
         return live_in_water;

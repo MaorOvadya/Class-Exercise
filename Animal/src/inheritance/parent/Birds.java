@@ -1,6 +1,6 @@
 package inheritance.parent;
-
-public class Birds {
+import inheritance.Animal;
+public class Birds extends Animal {
 protected String have_wings;   
 protected String animal_with_feathers;
 protected String can_fly;
@@ -13,10 +13,14 @@ public Birds(){
     this.number_of_wings = 2;
 }
 
-public Birds(String animal_with_feathers, String can_fly, String havve_wings, int number_of_wings) {
+
+
+public Birds(double dHeight, Double Weight, String animalType, String bloodType, String have_wings,
+        String animal_with_feathers, String can_fly, int number_of_wings) {
+    super(dHeight, Weight, animalType, bloodType);
+    this.have_wings = have_wings;
     this.animal_with_feathers = animal_with_feathers;
     this.can_fly = can_fly;
-    this.have_wings = have_wings;
     this.number_of_wings = number_of_wings;
 }
 

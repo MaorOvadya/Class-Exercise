@@ -1,6 +1,7 @@
 package inheritance.parent;
 
-public class Reptile {
+import inheritance.Animal;
+public class Reptile extends Animal {
 
     private String dry_skin;
     private String back_bone;
@@ -12,7 +13,8 @@ public class Reptile {
         this.soft_shelled_eggs = "Yes";
     }
 
-    public Reptile(String dry_skin, String back_bone, String soft_shelled_eggs) {
+    public Reptile(double dHeight, Double Weight, String animalType, String bloodType, String dry_skin,String back_bone, String soft_shelled_eggs) {
+        super(dHeight, Weight, animalType, bloodType);
         this.dry_skin = dry_skin;
         this.back_bone = back_bone;
         this.soft_shelled_eggs = soft_shelled_eggs;
@@ -44,9 +46,10 @@ public class Reptile {
 
     @Override
     public String toString() {
-        return "Reptile: dry skin = " + dry_skin + ", back bone = " + back_bone + ", soft shelled eggs = " + soft_shelled_eggs;
+        return "Reptile [dry_skin=" + dry_skin + ", back_bone=" + back_bone + ", soft_shelled_eggs=" + soft_shelled_eggs
+                + "]" + BloodType;
     }
 
-    
+
 
 }

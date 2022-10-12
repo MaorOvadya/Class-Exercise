@@ -15,11 +15,11 @@ public Eagle(int number_of_legs) {
     this.number_of_legs = number_of_legs;
 }
 
-public Eagle(String animal_with_feathers, String can_fly, String havve_wings, int number_of_wings, int number_of_legs) {
-    super(animal_with_feathers, can_fly, havve_wings, number_of_wings);
+public Eagle(double dHeight, Double Weight, String animalType, String bloodType, String have_wings,
+        String animal_with_feathers, String can_fly, int number_of_wings, int number_of_legs) {
+    super(dHeight, Weight, animalType, bloodType, have_wings, animal_with_feathers, can_fly, number_of_wings);
     this.number_of_legs = number_of_legs;
 }
-
 
 public int getNumber_of_legs() {
     return number_of_legs;
