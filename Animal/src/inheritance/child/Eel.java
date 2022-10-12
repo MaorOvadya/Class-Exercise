@@ -3,7 +3,7 @@ package inheritance.child;
 import inheritance.parent.Fish;
 
 
-public class Eel {
+public class Eel extends Fish {
 
     private String release_electric_eggs;
     private String show_info;

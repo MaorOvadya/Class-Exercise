@@ -2,7 +2,7 @@ package inheritance.child;
 
 import inheritance.parent.Reptile;
 
-public class Crocodile {
+public class Crocodile extends Reptile {
     
     private String hard_shelled_eggs;
     private String show_info;

@@ -13,8 +13,9 @@ public class Animal {
         Eagle bird = new Eagle();
         System.out.println(bird);
         System.out.println("<---------------------->");
-        Eagle bird1 = new Eagle("No");
+        Eagle bird1 = new Eagle();
         System.out.println(bird1);
+
 
 
     }

@@ -3,30 +3,36 @@ package inheritance.child;
 import inheritance.parent.Birds;
 
 
-public class Eagle {
+public class Eagle extends Birds{
     
-  private String show_info;
+  private int number_of_legs;
 
-
-  public Eagle() {
-    this.show_info = "Yes";
+public Eagle() {
+    this.number_of_legs = 2;
 }
 
-public Eagle(String show_info) {
-    this.show_info = show_info;
+public Eagle(int number_of_legs) {
+    this.number_of_legs = number_of_legs;
 }
 
-public String getShow_info() {
-    return show_info;
+public Eagle(String animal_with_feathers, String can_fly, String havve_wings, int number_of_wings, int number_of_legs) {
+    super(animal_with_feathers, can_fly, havve_wings, number_of_wings);
+    this.number_of_legs = number_of_legs;
 }
 
-public void setShow_info(String show_info) {
-    this.show_info = show_info;
+
+public int getNumber_of_legs() {
+    return number_of_legs;
+}
+
+public void setNumber_of_legs(int number_of_legs) {
+    this.number_of_legs = number_of_legs;
 }
 
 @Override
 public String toString() {
-    return "Eagle: show info = " + show_info;
+    return "Birds: \nhave wings=" + have_wings + "\nanimal with feathers = " + animal_with_feathers + "\ncan fly = " + can_fly
+    + "\nnumber of wings = " + number_of_wings + " Number of legs = " + number_of_legs;
 }
 
 }
