@@ -8,7 +8,7 @@ public class App {
         Eel Eel = new Eel();
         System.out.println(Eel);
         System.out.println("<---------------------->");
-        Crocodile crocodile = new Crocodile();
+        Crocodile crocodile = new Crocodile(5.5,6.2,"Reptile","B+","Yes","Yes","Yes", "Yes", "Yes");
         System.out.println(crocodile);
         System.out.println("<---------------------->");
         Eagle bird = new Eagle();

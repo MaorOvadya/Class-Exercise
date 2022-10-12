@@ -2,9 +2,9 @@ package inheritance;
 
     public class Animal {
 
-    private double Height;
-    private double Weight;
-    private String AnimalType;
+    protected double Height;
+    protected double Weight;
+    protected String AnimalType;
     protected String BloodType;
 
     public Animal(){}
